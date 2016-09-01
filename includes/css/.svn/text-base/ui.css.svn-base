@@ -1,0 +1,288 @@
+/*alert style*/
+.alert p{
+ 		
+		padding:5px 0 10px 50px;
+		margin:0px !important;
+	}
+.alert{
+		padding:10px;
+		border:1px solid #ccc;
+	
+		clear:both;
+		margin:0px 10px 10px 0px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+.warning{
+	background-color: #FFFFCC;
+	border: 2px solid #FFCC00;
+    color: #CC9900;
+	} 
+.error{
+	background-color: #FBE3E8;
+    border: 2px solid #FF7D98;
+    color: #EE5674;
+	}
+.important{
+    background-color: #FFFDCC;
+    border: 2px solid #FFD400;
+    color: #E3AC00;
+	}
+.information{
+	background-color: #DCFAD0;
+    border: 2px solid #9FDE23;
+    color: #76AC00;
+	}
+.question{
+	background-color: #DBF3FF;
+    border: 2px solid #71C2EB;
+    color: #5897B6;
+	}
+	
+/*container style*/
+.ui-widget { 
+	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; 
+	font-size: 1.1em; 
+	}
+.ui-widget .ui-widget { 
+	font-size: 1em; 
+	}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { 
+	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; 
+	font-size: 1em; }
+.ui-widget-content { 
+	border: 0px solid #dddddd; 
+	color: #333333; 
+	}
+.ui-widget-content a { 
+	color: #333333; 
+	}
+.ui-widget-header { 
+	color: #ffffff; 
+	font-weight: bold; 
+	}
+.ui-widget-header a { 
+	color: #ffffff; 
+	}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { 
+	border: 1px solid #cccccc; 
+	font-weight: bold; color: #1c94c4; 
+	background:#ccc;
+	background:url(../../images/gradient1.png) repeat-x top; 
+	}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	 color: #1c94c4; text-decoration: none; 
+	}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { 
+	border: 1px solid #ccc; 
+	font-weight: bold; 
+	color: #666;
+	background:#ececec;
+	 }
+.ui-state-hover a, .ui-state-hover a:hover { 
+	color: #c77405; 
+	text-decoration: none; 
+	}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	border: 1px solid #ccc; 
+	font-weight: bold; color: #eb8f00;
+	background:#FFFFFF;
+	
+	}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { 
+	color: #eb8f00; 
+	text-decoration: none;
+	}
+.ui-widget :active { 
+	outline: none;
+	}
+.ui-corner-tl { 
+	-moz-border-radius-topleft: 4px; 
+	-webkit-border-top-left-radius: 4px; 
+	border-top-left-radius: 4px; 
+	}
+.ui-corner-tr { 
+	-moz-border-radius-topright: 4px; 
+	-webkit-border-top-right-radius: 4px; 
+	border-top-right-radius: 4px; 
+	}
+.ui-corner-bl { 
+	-moz-border-radius-bottomleft: 4px; 
+	-webkit-border-bottom-left-radius: 4px; 
+	border-bottom-left-radius: 4px; 
+	}
+.ui-corner-br { 
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px; 
+	}
+.ui-corner-top { 
+	-moz-border-radius-topleft: 4px; 
+	-webkit-border-top-left-radius: 4px; 
+	border-top-left-radius: 4px; 
+	-moz-border-radius-topright: 4px; 
+	-webkit-border-top-right-radius: 4px; 
+	border-top-right-radius: 4px; 
+	}
+.ui-corner-bottom { 
+	-moz-border-radius-bottomleft: 4px; 
+	-webkit-border-bottom-left-radius: 4px; 
+	border-bottom-left-radius: 4px; 
+	-moz-border-radius-bottomright: 4px; 
+	-webkit-border-bottom-right-radius: 4px; 
+	border-bottom-right-radius: 4px; 
+	}
+.ui-corner-right {  
+	-moz-border-radius-topright: 4px; 
+	-webkit-border-top-right-radius: 4px; 
+	border-top-right-radius: 4px; 
+	-moz-border-radius-bottomright: 4px; 
+	-webkit-border-bottom-right-radius: 4px; 
+	border-bottom-right-radius: 4px; 
+	}
+.ui-corner-left { 
+	-moz-border-radius-topleft: 4px; 
+	-webkit-border-top-left-radius: 4px; 
+	border-top-left-radius: 4px; 
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px; 
+	}
+.ui-corner-all { 
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border-radius: 4px; 
+	}
+
+/* states and images */
+.ui-icon { 
+	width: 16px; 
+	height: 16px; 
+	}
+.ui-state-default .ui-icon { 
+	background-image: url(../../images/ui-icons_ef8c08_256x240.png); 
+	}
+.ui-state-active .ui-icon {
+	background-image: url(../../images/ui-icons_ef8c08_256x240.png);
+	}
+
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+
+/*style tab*/
+.ui-tabs { 
+	position: relative; 
+	padding: .2em; 
+	zoom: 1;
+	}
+.ui-tabs .ui-tabs-nav { 
+	margin: 0; 
+	padding: 0 0 0; 
+	color:#999999;
+	height:9px;
+	}
+.ui-tabs .ui-tabs-nav li { 
+	list-style: none; 
+	float: left; 
+	position: relative; 
+	top: 1px; 
+	margin: 0 .2em 1px 0;
+	border-bottom: 0 !important; 
+	padding: 0; white-space: nowrap;
+	}
+.ui-tabs .ui-tabs-nav li a { 
+	float: left; 
+	padding: .5em 1em; 
+	text-decoration: none;
+	color:#666666;
+
+	}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { 
+	margin-bottom: 0; 
+	padding-bottom: 1px; 
+	}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+	 cursor: text; 
+	 }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { 
+	cursor: pointer; 
+	} /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { 
+	display: block; 
+	border-width: 0; 
+	padding: 1em 1.4em; 
+	background: none;
+	border:1px solid #ccc; 
+	}
+.ui-tabs .ui-tabs-hide { 
+	display: none !important; 
+	}
+	
+/*Accordion style*/
+.ui-accordion { width: 100%; }
+.ui-accordion .ui-accordion-header { 
+	cursor: pointer; position: relative; 
+	margin-top: 1px; zoom: 1; 
+	background:url(../../images/gradient1.png) repeat-x top; 
+	}
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
+.ui-accordion .ui-accordion-header a { 
+	display: block; 
+	font-size: 1em; 
+	padding: .5em .5em .5em .7em;  
+	color:#666666}
+.ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
+.ui-accordion .ui-accordion-header .ui-icon { 
+	position: absolute; 
+	left: .5em; 
+	top: 50%; 
+	margin-top: -8px; 
+	}
+.ui-accordion .ui-accordion-content { 
+	padding: 1em 2.2em; 
+	border-top: 0; 
+	margin-top: -2px; 
+	position: relative; 
+	top: 1px; margin-bottom: 2px; 
+	overflow: auto; 
+	display: none; zoom: 1; 
+	border:1px solid #ccc;
+	}
+.ui-accordion .ui-accordion-content-active { display: block; }
+
+/*button*/
+
+.button_link{
+			
+		}
+.button_link a, .button_link a:visited{
+		border:1px solid #ccc;
+		background:url(../../images/gradient1.png) repeat-x top;
+		padding:10px 20px;
+		color:#999;
+		display:inline-block;
+		text-decoration:none;
+		margin:5px;
+		font-size:14px;
+	}
+.button_link a:hover{
+		opacity: .80;
+		filter:Alpha(Opacity=80); 
+	}
+.button_link_small a{
+		padding:5px 10px;
+		font-size:12px;
+	}
+.button_link_large a{
+	padding:20px 50px;
+	font-size:22px;
+}

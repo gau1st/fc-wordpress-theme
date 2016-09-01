@@ -1,0 +1,16 @@
+***************
+*** 71,76 ****
+  ?>
+  <script type="text/javascript">
+        Cufon.replace('.logo_container a, .content-blog h3, #content .entry-title, .menu-header a, .featured_cat_name, .widget-title, .page-title', { fontFamily: 'Century Gothic' });
+  </script>
+  
+  <?php
+--- 71,77 ----
+  ?>
+  <script type="text/javascript">
+        Cufon.replace('.logo_container a, .content-blog h3, #content .entry-title, .menu-header a, .featured_cat_name, .widget-title, .page-title', { fontFamily: 'Century Gothic' });
++ 	   Cufon.replace('h1, h2, h3, h4, h5 ,h6', { fontFamily: 'Century Gothic' });
+  </script>
+  
+  <?php

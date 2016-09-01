@@ -1,0 +1,60 @@
+/* 247themes_admin.css */
+.admin-con247{
+
+	
+		
+	}
+.input{
+		font-size:12px;
+		clear:both;float:left;
+		padding-bottom:20px;
+	}
+.admin-con247 input.input_text, .input_textarea{
+		width:300px;
+	}
+.input_textarea{
+		height:200px;
+}
+input.input_small{
+		width:100px;
+	}
+input.input_verysmall{
+		width:50px;
+	}
+label{
+		
+		clear:both;
+		float:left;
+	}
+.form-table td{
+	vertical-align:top;
+			
+	}
+.form-table td h3{
+		padding:0px;
+		margin:0px;
+	}
+.form-table td span{ 
+	font-size:11px;
+	color:#777;
+	}
+	
+/* preset bg image selector */
+.background_image_preset_selected{
+    border: 1px solid #ff0000 !important;
+}
+.bg_container{
+		width:20px;
+		margin:0px 10px 0 0;
+		floaT:left;
+		overflow:hidden;
+		height:20px;
+		border:1px solid #ccc;
+	}
+.background_image_preset{
+		clear:both;
+	}
+.repeat_img{
+		float:left;
+		clear:both;
+	}

@@ -1,0 +1,60 @@
+<?php
+// portfolio.php
+// portfolio shortcode handler
+
+function _247themes_portfolio($attr) {
+    global $shortname;
+    extract(shortcode_atts(array(
+        'category'  => '',
+        'columns'   => 3,
+        'orderby'   => 'post_date',
+        'spacing'   => 0.4,             // width of whitespace as fraction of pic width
+        'order'     => 'DESC',
+        'more'      => 'yes',           // show "read more" link
+        'link'      => 'yes'            // show "view" url link
+    ), $attr));
+    
+    $search = get_posts(array(
+                    'post_type' => $shortname.'_portfolio',
+                    'category'  => $category,
+                    'orderby'   => $orderby,
+                    'order'     => $order
+              ));
+    
+    // calculate width
+    $itemwidth      = 100 / ((($columns-1) * $spacing) + $columns);
+    $paddingwidth   = $itemwidth * $spacing;
+    $itemwidth      = floor($itemwidth) . '%';
+    $paddingwidth   = floor($paddingwidth) . '%';
+    
+    // return value
+    $ans = '
+        <div class="portfolio_viewer">
+    ';
+    $i = 0;
+    foreach ($search as $thisp) {
+        $thislink   = get_post_meta($thisp->ID, $shortname.'_portfolio_url', true);
+        $image      = wp_get_attachment_image_src(get_post_thumbnail_id($thisp->ID), 'full');
+        $i++;
+        $ans.= '
+            <div class="portfolio_item" style="float:left; width:'.$itemwidth.';'.($i < $columns ? ' padding-right:'.$paddingwidth.';' : '').'">
+                <span class="portfolio_title">'.$thisp->post_title.'</span>
+                <div class="portfolio_image"><img src="'.$image[0].'"></div>
+        ';
+        if ($more)
+            $ans.= '<a class="portfolio_more" href="'.get_permalink($thisp->ID).'">Read more</a> ';
+        if ($link && strlen($thislink))
+            $ans.= '<a class="portfolio_link" href="'.$thislink.'">View</a>';
+        $ans.= '
+            </div>
+        ';
+        if ($i >= $columns)
+            $i = 0;
+    }
+    $ans.= '
+        <div class="portfolio_viewer">
+    ';
+    return $ans;
+}
+
+add_shortcode('portfolio', '_247themes_portfolio');
